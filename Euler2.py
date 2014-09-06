@@ -6,15 +6,13 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 """
 
 n = 1
-y = 0
 x = 2
 add = 0
 
 while x < 4000000:
 	if x % 2 == 0:
 		add += x
-	y = n
-	n = x
-	x = x + y
+	x +=  n
+	n = x - n
 
 print(add)
