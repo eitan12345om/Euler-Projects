@@ -8,7 +8,7 @@ primes.append(2)
 
 def checkPrime(a, number_of_primes):
 	while len(primes) < number_of_primes:
-		if any(a % b == 0 for b in range(3, a, 2)):
+		if any(a % b == 0 for b in range(3, int(a/2), 2)):
 			pass
 		else:
 			primes.append(a)
